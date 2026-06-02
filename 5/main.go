@@ -106,7 +106,6 @@ func main() {
 		}
 	}
 
-	// 1
 	text := "Docker"
 	q1 := map[string]interface{}{
 		"query": map[string]interface{}{

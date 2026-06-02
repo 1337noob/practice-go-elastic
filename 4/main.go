@@ -81,7 +81,6 @@ func main() {
 		}
 		defer searchRes.Body.Close()
 
-		// 6. Разбор результатов
 		var result map[string]interface{}
 		if err := json.NewDecoder(searchRes.Body).Decode(&result); err != nil {
 			log.Fatal(err)
@@ -106,7 +105,6 @@ func main() {
 		}
 	}
 
-	// 1
 	email := "bob@example.com"
 	q1 := map[string]interface{}{
 		"query": map[string]interface{}{
